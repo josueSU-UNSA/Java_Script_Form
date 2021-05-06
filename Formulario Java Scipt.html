@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            
+            body{
+                background-color: rgb(0, 204, 204 );
+            }
+            form{
+                background-color:rgb(224, 224, 224);
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0 auto;
+                width: 300px;
+            }
+        </style>
+        
+        <script src="validar.js"></script>
+        <form action="" method="GET" class="form-register" onsubmit="return validar();">
+            <h1>Formulario de registro</h1>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" ><br><br>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" ><br><br>
+            Selecciona tu sexo:<BR>
+                <INPUT type="radio" name="sexo">Varón<BR>
+                <INPUT type="radio" name="sexo">Mujer<BR><BR>
+            <input type="text" id="correo" name="correo" placeholder="Correo" class="input-48" ><br><br>
+            Población:  <SELECT NAME="Colores" SIZE="1">
+                <OPTION VALUE="a">Arequipa</OPTION>
+                <OPTION VALUE="c">Cusco</OPTION>
+                <OPTION VALUE="l">Lima</OPTION>
+                <OPTION VALUE="p">Puno</OPTION>
+            </SELECT><BR><BR>
+            <!--Cuadro de texto de descripcion-->
+            Descripcion:<BR><textarea name="descripcion"></textarea><BR>
+            <input type="checkbox" id="notificaciones" name="notificaciones" checked>Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos<br><br>
+            <input type="checkbox" id="condiciones" name="condiciones" class="input-48" >Deseo recibir información sobre novedades y ofertas<br><br>  
+            <input type="submit" value="Enviar" class="btn-enviar" ><br><br>
+
+            
+
+
+
+
+        </form>
+    </body>
+</html>
